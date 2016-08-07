@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/ungrid.css">
+</head>
+
+<body ng-app="myApp" ng-controller="myAppController as app" ng-cloak>
+
+    <div class="row">
+        <input type="file" file-model="app.myFile" class="col"/>
+        <button ng-click="app.upload()"  class="col">Upload File</button>
+    </div>
+    <div ng-if="app.myCsv.length > 0">
+        <table>
+            <tr ng-repeat="row in app.myCsv track by $index" class="row">
+                <td ng-repeat="col in row track by $index">
+                    <input type="text" ng-model="app.myCsv[$parent.$index][$index]" class="col"> 
+                </td> 
+            </tr>
+        </table>
+    </div>
+    <div ng-if="app.myCsv.length == 0">
+        <p>
+            Sorry, nothing to see here folks....
+        </p>
+    </div>
+</body> 
+
+
+
+<script type="text/javascript" src="./node_modules/angular/angular.js"></script>
+<script type="text/javascript" src="./app/app.js"></script>
+
+</html>
