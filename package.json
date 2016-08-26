@@ -1,0 +1,31 @@
+{
+  "name": "angular-excel",
+  "version": "0.0.0",
+  "description": "trying to figure out how to create a csv loader",
+  "main": "app.js",
+  "dependencies": {
+    "angular-ui-grid": "^3.2.6",
+    "angular": "^1.5.8",
+    "jquery": "^3.1.0",
+    "lodash": "^4.14.1",
+    "browser-sync": "^2.14.0"
+  },
+  "devDependencies": {
+    "angular": "^1.5.8",
+    "browser-sync": "^2.14.0",
+    "lodash": "^4.14.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkhk352/angular-spreadsheet.git"
+  },
+  "author": "Habib Khan",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/mkhk352/angular-spreadsheet/issues"
+  },
+  "homepage": "https://github.com/mkhk352/angular-spreadsheet#readme"
+}
